@@ -1,10 +1,15 @@
-  return { "folke/tokyonight.nvim", 
-    name = "tokyonight", 
-    priority = 1000, 
-    transparent = true,
-    config = function()
-      vim.cmd.colorscheme "tokyonight-day"
-    end
+return {
+  "rose-pine/neovim",
+  name = "rose-pine",
+  priority = 1000,
+  config = function()
+    require("rose-pine").setup({
+      styles = {
+        transparency = true
+      },
+    })
+    vim.cmd.colorscheme "rose-pine"
+  end
 }
 
 
